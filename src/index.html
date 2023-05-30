@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 11</title>
-    <link rel="stylesheet" href="css/common.css" />
+    <title>Photos Search</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <header class="header-bar">
+    <section id="topBar">
       <form class="search-form" id="search-form">
         <input
           type="text"
@@ -17,20 +23,11 @@
           placeholder="Search images..."
         />
         <button type="submit">
-          <svg class="icon-search">
-            <use xlink:href="./images/search.svg#icon-search"></use>
-          </svg>
+          <img src="./images/search.svg" alt="searchIcon" width="19" />
         </button>
       </form>
-    </header>
-    <main>
-      <div class="gallery-wrapper">
-      <div class="gallery">
-        <!-- Obraz karty -->
-      </div>
-      <button class="load-button">LOAD MORE</button>
-    </div>
-    </main>
-    <script src="./js/index.js" type="module"></script>
+    </section>
+    <div class="gallery"></div>
+    <button type="button" class="load-more">Load more</button>
   </body>
 </html>
